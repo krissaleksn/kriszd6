@@ -1,0 +1,27 @@
+﻿<Page x:Class="kristinazd5.Page6"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" Background="AliceBlue"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:kristinazd5"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page6">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="175"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Задание 6" HorizontalAlignment="Center" Grid.ColumnSpan="2" ></TextBlock>
+        <TextBlock Text="Введите число N" Grid.Row="1" VerticalAlignment="Bottom" ></TextBlock>
+        <TextBox HorizontalAlignment="Stretch" Grid.Column="1" Grid.Row="1" VerticalAlignment="Bottom" Name="numn" ></TextBox>
+        <TextBlock Grid.Row="5" Grid.ColumnSpan="2" Text="Ответ:" Name="zad" ></TextBlock>
+        <Button Grid.Row="5" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Bottom" Content="Найти" FontSize="60" Margin="20" Width="200" Click="Button_Click"></Button>
+    </Grid>
+</Page>
